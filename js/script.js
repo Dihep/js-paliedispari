@@ -24,14 +24,14 @@ const numeroU = prompt("Scegli un numero da uno a cinque");
 const numeroC = Math.floor(Math.random()*6);
 let pari = false;
 pariF(numeroU, numeroC);
-if ((scelta == "pari" || scelta == "Pari") && pari==true) {
-    console.log("Hai vinto.", numeroU, numeroC)
-}
-else if (scelta == "dispari" || scelta == "Dispari") && pari==false) {
+if (
+    ((scelta == "pari" || scelta == "Pari") && pari==true) || 
+    ((scelta == "dispari" || scelta == "Dispari") && pari==false)
+) {
     console.log("Hai vinto.", numeroU, numeroC)
 } else {
     console.log("Hai perso.", numeroU, numeroC)
-}
+};
 
 //Funione pari o dispari//
 function pariF(numeroU, numeroC) {
