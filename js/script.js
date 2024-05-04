@@ -16,3 +16,7 @@ function palindroma(p) {
     };
     console.log(`La parola "${parola}" è palindroma? `, pValue);
 };
+
+const scelta = prompt("Pari o dispari?");
+const numeroU = prompt("Scegli un numero da uno a cinque");
+const numeroC = Math.floor(Math.random()*6);
